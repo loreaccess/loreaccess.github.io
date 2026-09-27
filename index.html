@@ -292,6 +292,11 @@
     @media (max-width: 419px) {
       .hero h1 { font-size: 30px; }
     }
+    /* Narrow phones: icon-only brand so every menu item fits */
+    @media (max-width: 440px) {
+      .brand-name { display: none; }
+      .nav-links a { padding: 0 7px; }
+    }
   </style>
 </head>
 <body>
@@ -338,13 +343,14 @@
     <div class="wrap">
       <a class="brand" href="#top" aria-label="LoreAccess home">
         <svg aria-hidden="true"><use href="#i-book"/></svg>
-        LoreAccess
+        <span class="brand-name">LoreAccess</span>
       </a>
       <div class="nav-links">
         <a href="#follow">Follow</a>
         <a href="#mission" class="hide-sm">Mission</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="legal.html">Legal</a>
       </div>
     </div>
   </nav>
@@ -534,7 +540,7 @@
   <footer>
     <div class="wrap">
       <div class="legal">
-        © <span id="year">2026</span> LoreAccess · <a href="#contact">info.loreaccess@gmail.com</a>
+        © <span id="year">2026</span> LoreAccess · <a href="#contact">info.loreaccess@gmail.com</a> · <a href="legal.html">Legal notice</a>
       </div>
       <div class="foot-social">
         <a href="https://www.youtube.com/@loreaccess" target="_blank" rel="noopener" aria-label="YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a>
