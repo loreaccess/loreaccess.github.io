@@ -205,6 +205,7 @@
 
     .focus-title { font-size: 21px; font-weight: 600; line-height: 1.19; letter-spacing: 0.231px; margin-top: 56px; }
     .focus-title + .pillars { margin-top: 24px; }
+    .pillars-2 { grid-template-columns: repeat(2, 1fr); max-width: 840px; margin-left: auto; margin-right: auto; }
 
     /* ---------- Contact ---------- */
     .copy-email { margin-top: 32px; }
@@ -233,7 +234,7 @@
     }
     @media (max-width: 833px) {
       .channels { grid-template-columns: repeat(3, 1fr); }
-      .pillars, .steps { grid-template-columns: 1fr; }
+      .pillars, .pillars-2, .steps { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 16px; }
@@ -349,6 +350,7 @@
         <a href="#follow">Follow</a>
         <a href="#mission" class="hide-sm">Mission</a>
         <a href="#projects">Projects</a>
+        <a href="#vision" class="hide-sm">Vision</a>
         <a href="#contact">Contact</a>
         <a href="legal.html">Legal</a>
       </div>
@@ -521,12 +523,34 @@
       </div>
     </section>
 
+    <!-- Vision -->
+    <section class="tile tile-parchment" id="vision">
+      <div class="wrap">
+        <p class="eyebrow muted">The dream</p>
+        <h2 class="display-lg">Hidden gems, within easy reach.</h2>
+        <p class="lead-airy mission-text">The dream is to make many hidden gems accessible to different audiences in a convenient way: spoken, on social media, in local languages and with rich media. We’re still early, and your feedback helps us improve.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#contact">Share feedback</a>
+        </div>
+        <div class="pillars pillars-2">
+          <div class="pillar">
+            <h3>Not our stories</h3>
+            <p>Many of the stories we share are not original ideas. They belong to the authors, cultures and histories they come from. Our work is presenting them in an accessible way to different audiences.</p>
+          </div>
+          <div class="pillar">
+            <h3>Made with AI</h3>
+            <p>Some of our content is created with the help of AI, including Anthropic’s Claude, Google’s Gemini and NotebookLM, and, depending on the task, models from OpenAI, xAI (Grok), DeepSeek and Meta (Llama). With a small team and limited resources, AI helps us reach a good level of quality at scale, faster.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="tile tile-light" id="contact">
       <div class="wrap">
         <p class="eyebrow muted">Get in touch</p>
         <h2 class="display-lg">Say hello.</h2>
-        <p class="lead-airy mission-text">Collaborations, translations, ideas or a book you’d love to see? We’d like to hear from you.</p>
+        <p class="lead-airy mission-text">Feedback, collaborations, translations, ideas or a book you’d love to see? We’d like to hear from you.</p>
         <button class="btn btn-primary btn-large copy-email" id="copyEmail" type="button" data-email="info.loreaccess@gmail.com" aria-describedby="copyHint">
           info.loreaccess@gmail.com
           <svg aria-hidden="true"><use href="#i-copy"/></svg>
